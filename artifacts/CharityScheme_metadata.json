@@ -1,0 +1,190 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_president",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_population",
+						"type": "uint256"
+					}
+				],
+				"name": "DummyCreatorShelter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "HomelesShelters",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "accountID",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "orgName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "president",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "population",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSHelterQuota",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getShelter",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "accountID",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "orgName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "president",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "population",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CharityScheme.shelter[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVaultBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tip",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DecentralizedLottery.sol": "CharityScheme"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DecentralizedLottery.sol": {
+			"keccak256": "0x8a4b39f5e080763c684d21dac0826646a4b29e7746d2ec239bdb6c519d445091",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://72c58022cb74fde37975e12984875e828bde84900056adf9bd6a80d34ad560a1",
+				"dweb:/ipfs/QmPHfPhm32mgxBoECJKGeueny4KLmeZau1GhxmmnqKoV7D"
+			]
+		}
+	},
+	"version": 1
+}

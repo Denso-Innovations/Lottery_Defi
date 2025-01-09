@@ -6,6 +6,64 @@
 
 pragma solidity ^0.8.0;
 
+// An Independent Body To Manage Its Own Funds And Equally Distribute In Percentage Form To The Number
+// Of Organizations dependent to it based on population size , age differentials so on 
+contract CharityScheme {
+    // the wallet sets the tip
+    uint public tip; 
+    uint public balance;
+
+    struct shelter {
+        address accountID ; 
+        string orgName ; 
+        string president ; 
+        uint population ; 
+
+    }
+// Function TO Reterive Account Balance  
+function getVaultBalance()public view returns (uint256){
+    return balance ;
+}
+// Array Of Structs To Hold Our Shelter Organizations 
+// This is to try and provide a real world case scenario of having equitable
+// charity distributions thru blockchain 
+// Our Dummy Creator In Real Scenes AccountID's Will be loed from msg.sender 
+
+    shelter[] public HomelesShelters ; 
+
+
+function DummyCreatorShelter( string memory _name ,  string memory _president , uint  _population  )public{
+
+HomelesShelters.push(shelter({ 
+    accountID : address(0) , 
+    orgName:_name, 
+    president:_president ,
+    population : _population  
+}));
+
+
+}
+
+function  getSHelterQuota() public view returns (uint){ 
+  return HomelesShelters.length ; 
+
+}
+
+
+// Retreive A List of Charitable Organizations Registered 
+function getShelter() public view returns (shelter[] memory ){ 
+   shelter[] memory userArray = new shelter[](HomelesShelters.length);
+
+  for (uint i = 0; i < HomelesShelters.length; i++) {
+    userArray[i] = HomelesShelters[i];
+  }
+
+  return userArray;
+}
+
+
+}
+
 contract DecentralizedLottery {
     address public owner;
     address[] public players;
